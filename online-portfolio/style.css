@@ -1,24 +1,28 @@
- <style>
-        body {
-          background-color: lightgray;
-        }
-        h2 {
-             color: firebrick;
-        }
-        h3 {
-            color: green;
-        }
-        img {
-        border: 7px solid black;
-        margin-left: 550px;
-        }
-        footer {
-               text-align: center;
-        }
-        .test {
-           width: 90%;
-           margin-left: 5%;
-           margin-top: 30px;
-           margin-left: 30px;
-        }
-    </style>
+<style>
+  body {
+    background-color: lightgray;
+  }
+
+  h2 {
+    color: firebrick;
+  }
+
+  h3 {
+    color: green;
+  }
+
+  img {
+    border: 7px solid black;
+    margin-left: 550px; /* Optional: consider centering with flexbox instead */
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .test {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 30px;
+  }
+</style>
