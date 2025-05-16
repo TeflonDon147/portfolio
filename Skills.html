@@ -1,13 +1,154 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Skills</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background: #f4f4f4;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+
+        .skills-container {
+          width: 80%;
+          max-width: 900px;
+          background: #fff;
+          padding: 40px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+
+        .skills-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px 40px;
+        }
+
+        .skill {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .skill-label {
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+
+        .skill-bar {
+          position: relative;
+          background: #eee;
+          height: 8px;
+          border-radius: 4px;
+          overflow: hidden;
+        }
+
+        .skill-fill {
+          height: 100%;
+          background: #333;
+          border-radius: 4px 0 0 4px;
+        }
+
+        .skill-percent {
+          font-size: 12px;
+          text-align: right;
+          margin-top: 3px;
+        }
+    </style>
 </head>
 <body>
-<a href="index.html">Home</a>
+<div class="skills-container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+
+        <!-- Left Column -->
+        <div class="skill">
+            <div class="skill-label">Terraform</div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+            <div class="skill-percent">90%</div>
+        </div>
+        <div class="skill">
+            <div class="skill-label">AWS Services</div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
+            <div class="skill-percent">70%</div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-label">linux/scripting</div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
+            <div class="skill-percent">70%</div>
+        </div>
+        <div class="skill">
+            <div class="skill-label">Git/Github</div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+            <div class="skill-percent">90%</div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-label">Docker</div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+            <div class="skill-percent">90%</div>
+        </div>
+        <div class="skill">
+            <div class="skill-label">Kubernetes</div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+            <div class="skill-percent">90%</div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-label">Ansible</div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
+            <div class="skill-percent">70%</div>
+        </div>
+        <div class="skill">
+            <div class="skill-label">Packer</div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+            <div class="skill-percent">80%</div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-label">Vault</div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
+            <div class="skill-percent">70%</div>
+        </div>
+        <div class="skill">
+            <div class="skill-label">EKS</div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+            <div class="skill-percent">80%</div>
+        </div>
+        <div class="skill">
+            <div class="skill-label">ArgoCD</div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+            <div class="skill-percent">80%</div>
+        </div>
+        <div class="skill">
+            <div class="skill-label">Security</div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+            <div class="skill-percent">90%</div>
+        </div>
+        <div class="skill">
+            <div class="skill-label">Datadog</div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+            <div class="skill-percent">80%</div>
+        </div>
+        <div class="skill">
+            <div class="skill-label">prometheus/grafana</div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
+            <div class="skill-percent">70%</div>
+        </div>
+        <div style="margin-top: 20px;">
+            <a href="index.html">Home</a>
+        </div>
+
+
+    </div>
+</div>
 </body>
 </html>
